@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Doctor {
+public class Medicine {
     @Id
     @Column(
             updatable = false,

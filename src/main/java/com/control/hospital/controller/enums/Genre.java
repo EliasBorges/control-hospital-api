@@ -8,6 +8,5 @@ import lombok.NoArgsConstructor;
 @Getter
 public enum Genre {
     MASCULINE("masculine"), FEMALE("female");
-
-    private String genre;
+    private String value;
 }
