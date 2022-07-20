@@ -13,7 +13,7 @@ Na raiz do projeto:<br>
 
 ## Arquitetura
 <br/>
-![control-hospital](https://user-images.githubusercontent.com/31020103/180055419-309ce192-5ea2-4375-bdc0-0908b698b9d0.jpg)
+![control-hospital](https://user-images.githubusercontent.com/31020103/180067414-bfe3123e-8439-4fac-b83a-5510d3346e8f.jpg)
 
 #### Principais bibiliotecas utilizadas
 
