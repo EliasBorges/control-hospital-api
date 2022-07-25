@@ -14,7 +14,11 @@ Na raiz do projeto:<br>
 ## Arquitetura
 <br/>
 
-![control-hospital](https://user-images.githubusercontent.com/31020103/180067414-bfe3123e-8439-4fac-b83a-5510d3346e8f.jpg)
+## Class
+![control-hospital-diagram](https://user-images.githubusercontent.com/31020103/180861358-0a5fc77d-0e3c-4d4f-9d5a-f36bf6f209bb.jpg)
+
+## EER
+![control-hospital-EER](https://user-images.githubusercontent.com/31020103/180861481-d0e3f5d4-0806-441b-bb13-8083b57edae5.png)
 
 #### Principais bibiliotecas utilizadas
 

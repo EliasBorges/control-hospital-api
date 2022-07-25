@@ -26,4 +26,13 @@ public class Doctor {
 
     @Column(nullable = false)
     private Double value;
+
+    @Column(
+            nullable = false,
+            name = "medical_license"
+    )
+    private String medicalLicense;
+
+    @Column(nullable = false)
+    private String specialty;
 }

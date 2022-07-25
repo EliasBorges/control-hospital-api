@@ -23,7 +23,7 @@ public class DatabaseConfig {
         DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
 
         dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
-        dataSourceBuilder.url("jdbc:mysql://" + host + "/account?createDatabaseIfNotExist=true");
+        dataSourceBuilder.url("jdbc:mysql://" + host + "/hospital?createDatabaseIfNotExist=true");
         dataSourceBuilder.username(user);
         dataSourceBuilder.password(Files.toString(new File(password), UTF_8));
 

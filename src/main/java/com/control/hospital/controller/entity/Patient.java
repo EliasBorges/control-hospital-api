@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
+
+import static javax.persistence.EnumType.*;
 
 @Entity
 @Getter
@@ -48,7 +51,10 @@ public class Patient {
     )
     private LocalDate birthDate;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(STRING)
     @Column(nullable = false)
     private Genre genre;
+
+    @ManyToMany(mappedBy = "patients")
+    private List<Attendance> attendances;
 }

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+import static javax.persistence.EnumType.*;
+
 @Entity
 @Getter
 @AllArgsConstructor
@@ -26,7 +28,7 @@ public class Bed {
     )
     private String name;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(STRING)
     @Column(
             nullable = false,
             name = "type_bed"

@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
+
+import static javax.persistence.EnumType.*;
 
 @Entity(name = "surgery_center")
 @Getter
@@ -20,7 +23,7 @@ public class SurgeryCenter {
     )
     private String id;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(STRING)
     @Column(
             nullable = false,
             name = "type_surgery_center"
@@ -38,4 +41,7 @@ public class SurgeryCenter {
             name = "quantity_occupied"
     )
     private Integer quantityOccupied;
+
+    @OneToMany(mappedBy = "surgeryCenter")
+    private List<AttendanceSurgeryCenter> registrations;
 }

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import java.util.List;
 
 @Entity
 @Getter
@@ -24,12 +26,9 @@ public class Exam {
     @Column(nullable = false)
     private String name;
 
-    @Column(
-            nullable = false,
-            name = "medical_license"
-    )
-    private String medicalLicense;
-
     @Column(nullable = false)
-    private String specialty;
+    private Double value;
+
+    @ManyToMany(mappedBy = "exams")
+    private List<Attendance> attendances;
 }
