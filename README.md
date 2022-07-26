@@ -13,11 +13,11 @@ Na raiz do projeto:<br>
 
 ## Diagramas / Fluxogramas
 
-### Classe
-![control-hospital-diagram](./utils/control-hospital.drawio.svg)
-
 ### EER
 ![control-hospital-EER](./utils/control-hospital-EER.png)
+
+### Swagger
+![control-hospital-documentation](./utils/control-hospital-documentation.png)
 
 #### Principais bibiliotecas utilizadas
 
