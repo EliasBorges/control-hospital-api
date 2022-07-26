@@ -45,6 +45,10 @@ public class Attendance {
     @JoinColumn(name = "bed_id", referencedColumnName = "id")
     private Bed bedId;
 
+    @OneToOne(cascade = ALL)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User userId;
+
     @Column(nullable = false)
     private Double value;
 
