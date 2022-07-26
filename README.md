@@ -11,14 +11,13 @@ Na raiz do projeto:<br>
  - nohup mvn spring-boot:run & (executa a api em background)
  - http://IP:8080/swagger-ui.html# (acessar documentação pelo Swagger) 
 
-## Arquitetura
-<br/>
+## Diagramas / Fluxogramas
 
-## Class
-![control-hospital-diagram](https://user-images.githubusercontent.com/31020103/180861358-0a5fc77d-0e3c-4d4f-9d5a-f36bf6f209bb.jpg)
+### Classe
+![control-hospital-diagram](./utils/control-hospital.drawio.svg)
 
-## EER
-![control-hospital-EER](https://user-images.githubusercontent.com/31020103/180861481-d0e3f5d4-0806-441b-bb13-8083b57edae5.png)
+### EER
+![control-hospital-EER](./utils/control-hospital-EER.png)
 
 #### Principais bibiliotecas utilizadas
 
@@ -32,6 +31,11 @@ Na raiz do projeto:<br>
 * [JWT](https://jwt.io/introduction)
 * [Docker](https://docs.docker.com/)
 * [UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html)
+
+#### Referencias
+
+* [JPA One to One](https://www.baeldung.com/jpa-one-to-one)
+* [JPA Many to Many](https://www.baeldung.com/jpa-many-to-many)
 
 #### AUTOR
 
