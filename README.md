@@ -36,6 +36,7 @@ Na raiz do projeto:<br>
 
 * [JPA One to One](https://www.baeldung.com/jpa-one-to-one)
 * [JPA Many to Many](https://www.baeldung.com/jpa-many-to-many)
+* [Hibernate Validator](https://www.devmedia.com.br/conhecendo-o-hibernate-validator/18018)
 
 #### AUTOR
 

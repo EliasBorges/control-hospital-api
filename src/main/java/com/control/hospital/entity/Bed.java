@@ -1,6 +1,6 @@
-package com.control.hospital.controller.entity;
+package com.control.hospital.entity;
 
-import com.control.hospital.controller.enums.TypeBed;
+import com.control.hospital.enums.TypeBed;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

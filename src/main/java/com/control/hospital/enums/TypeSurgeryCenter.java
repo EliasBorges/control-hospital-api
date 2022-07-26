@@ -1,4 +1,5 @@
-package com.control.hospital.controller.enums;
+package com.control.hospital.enums;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public enum Genre {
-    MASCULINE("masculine"), FEMALE("female");
+public enum TypeSurgeryCenter {
+    SURGICAL("surgical"), OBSTETRIC("obstetric"), WAITING_ROOM("waitingRoom");
     private String value;
 }

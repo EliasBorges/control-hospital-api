@@ -1,4 +1,4 @@
-package com.control.hospital.controller.entity;
+package com.control.hospital.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,6 +23,9 @@ public class User {
             nullable = false
     )
     private String id;
+
+    @Column(nullable = false)
+    private String name;
 
     @Column(
             unique = true,

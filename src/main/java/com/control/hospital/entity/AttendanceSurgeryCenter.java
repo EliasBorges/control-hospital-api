@@ -1,4 +1,4 @@
-package com.control.hospital.controller.entity;
+package com.control.hospital.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

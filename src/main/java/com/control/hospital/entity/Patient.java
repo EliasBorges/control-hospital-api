@@ -1,6 +1,6 @@
-package com.control.hospital.controller.entity;
+package com.control.hospital.entity;
 
-import com.control.hospital.controller.enums.Genre;
+import com.control.hospital.enums.Genre;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

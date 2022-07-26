@@ -1,4 +1,4 @@
-package com.control.hospital.controller.enums;
+package com.control.hospital.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
