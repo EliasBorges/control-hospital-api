@@ -1,5 +1,6 @@
 package com.control.hospital.entity;
 
+import com.control.hospital.controller.user.request.ChangePasswordRequest;
 import com.control.hospital.controller.user.request.UserRequest;
 import com.control.hospital.repository.UserRepository;
 import lombok.AllArgsConstructor;
@@ -69,5 +70,15 @@ public class User {
                         LocalDateTime.now(),
                         LocalDateTime.now())
         );
+    }
+
+    public void updatePassword(
+            ChangePasswordRequest request,
+            UserRepository repository
+    ) {
+        this.updatedAt = LocalDateTime.now();
+        this.password = new BCryptPasswordEncoder().encode(request.getNewPassword());
+
+        repository.save(this);
     }
 }

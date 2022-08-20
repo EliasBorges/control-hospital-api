@@ -1,7 +1,6 @@
 package com.control.hospital.config;
 
-import com.control.hospital.exceptions.ResponseException;
-import com.control.hospital.exceptions.UserExistException;
+import com.control.hospital.exceptions.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
@@ -14,8 +13,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.util.Objects;
 
-import static org.springframework.http.HttpStatus.BAD_REQUEST;
-import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
+import static org.springframework.http.HttpStatus.*;
 
 @ControllerAdvice
 @Slf4j
@@ -42,6 +40,30 @@ public class GlobalExceptionConfig {
     @ExceptionHandler({UserExistException.class})
     public @ResponseBody
     ResponseException handlerBusinessRules(UserExistException exception) {
+        log.info(exception.getMessage());
+        return new ResponseException(env.getProperty(exception.getMessage()));
+    }
+
+    @ResponseStatus(BAD_REQUEST)
+    @ExceptionHandler({PasswordEqualsException.class})
+    public @ResponseBody
+    ResponseException handlerBusinessRules(PasswordEqualsException exception) {
+        log.info(exception.getMessage());
+        return new ResponseException(env.getProperty(exception.getMessage()));
+    }
+
+    @ResponseStatus(BAD_REQUEST)
+    @ExceptionHandler({PasswordIncorrectException.class})
+    public @ResponseBody
+    ResponseException handlerBusinessRules(PasswordIncorrectException exception) {
+        log.info(exception.getMessage());
+        return new ResponseException(env.getProperty(exception.getMessage()));
+    }
+
+    @ResponseStatus(NOT_FOUND)
+    @ExceptionHandler({UserNotFoundException.class})
+    public @ResponseBody
+    ResponseException handlerBusinessRules(UserNotFoundException exception) {
         log.info(exception.getMessage());
         return new ResponseException(env.getProperty(exception.getMessage()));
     }
