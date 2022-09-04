@@ -1,6 +1,7 @@
 package com.control.hospital.config;
 
-import com.control.hospital.exceptions.*;
+import com.control.hospital.exceptions.ResponseException;
+import com.control.hospital.exceptions.user.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;

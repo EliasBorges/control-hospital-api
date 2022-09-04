@@ -1,11 +1,11 @@
-package com.control.hospital.exceptions;
+package com.control.hospital.exceptions.attendancesurgerycenter;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class UserExistException extends RuntimeException {
+public class AttendanceSurgeryCenterExistException extends RuntimeException {
     private static final long serialVersionUID = 1L;
 
     private String message;
